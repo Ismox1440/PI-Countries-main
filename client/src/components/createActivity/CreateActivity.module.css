@@ -1,0 +1,145 @@
+.title {
+    color: var(--main-orange-color);
+    font-size: 5rem;
+    text-align: center;
+}
+
+
+/* ################## FORM ################## */
+.form h3 {
+    font-size: 2rem;
+}
+
+.form h4 {
+    font-size: 1.5rem;  
+}
+
+.form {
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputSelectContainer {
+    display: flex;
+    column-gap: 2rem;
+}
+
+.countriesTitle {
+    color: var(--main-orange-color);
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+
+
+.firstSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 5rem;
+}
+.continentSelect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.continentSelect select {
+    width: 200px;
+    height: 50px;
+}
+
+.continentsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    row-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnContainer {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+
+/* ################## BUTTONS ################## */
+.btnCountryContainer {
+    display: grid;
+    width: 90%;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.btnCreate, .btnCountry {
+    background: none;
+    color: var(--main-orange-color);
+    font-size: 2rem;
+    font-weight: bold;
+    border: 1px solid var(--main-gray-color);
+    padding: .5rem 1rem;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.btnCreate:hover {
+    color: white;
+    background-color: var(--main-orange-color);
+    padding: .5rem 1.5rem;
+}
+
+.btnCountry:hover  {
+    background-color: red;
+    color: white;
+}
+
+.error {
+    color: red;
+}
+
+.response {
+    color: green;
+}
+
+/* ################## MEDIA QUERYS ################## */
+
+@media (max-width: 1024px) {
+    .firstSection {
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+    .continentsContainer {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (max-width: 768px) {
+    .continentsContainer {
+        grid-template-columns: 1fr 1fr ;
+    }
+}
+
+@media (max-width: 320px) {
+    .continentsContainer {
+        grid-template-columns: 1fr;
+    }
+}

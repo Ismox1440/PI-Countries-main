@@ -1,0 +1,128 @@
+/* ################# ARROW BTN #################*/
+.arrowContainer {
+    width: 100%;
+    cursor: pointer;
+}
+
+.arrow {
+    width: 40px;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+/* ################# COUNTRY PAGE #################*/
+.title {
+    font-size: 70px;
+    color: var(--main-orange-color);
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.countryPage {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
+
+/* ################# COUNTRY INFO #################*/
+.countryInfo p, span {
+    font-size: 30px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.countryInfo span {
+    color: var(--main-orange-color);
+}
+
+.countryInfo img {
+    width: 400px;
+    border-radius: 15px;
+}
+
+.countryInfo {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;  
+}
+
+
+
+.countryData {
+    display: flex;
+    flex-direction: column;
+    column-gap: 2rem;
+    row-gap: .5rem;
+}
+
+.countryDetail {
+    display: flex;
+    column-gap: 2rem;
+}
+
+/* ################# ACTIVITIES #################*/
+.activity p, span {
+    font-size: 30px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.activity span {
+    color: var(--main-orange-color);
+}
+
+.activitiesTitle {
+    font-size: 30px;
+    color: var(--main-orange-color);
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.activity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5rem;
+    text-align: center;
+    margin-top: 2rem;
+    row-gap: 2rem;
+}
+
+/* ################# MEDIA QUERYS #################*/
+@media (max-width: 1366px) {
+    .countryPage {
+        width: 80%;
+    }
+}
+@media (max-width: 970px) {
+    .countryPage {
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .countryInfo {
+        flex-direction: column-reverse;
+    }
+    .activity {
+        flex-direction: column;
+        border: 1px solid var(--main-orange-color);
+        border-radius: 15px;
+    }
+}
+
+@media (max-width: 430px) {
+    .countryDetail {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+

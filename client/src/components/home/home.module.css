@@ -1,0 +1,242 @@
+.homeContainer {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*############## HEADER ##############*/
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.createContainer {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.btnCreate {
+    display: flex;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: var(--main-font);
+    color: black;
+    border: 1px solid #D0D4D9;
+    border-radius: 10px;
+    width: 200px;
+    height: 40px;
+    margin-top: 10px;
+    margin-right: 10px;
+    align-items: center;
+    justify-content: center ;
+}
+
+.btnCreate:hover {
+    background-color: #D0D4D9;
+}
+
+
+
+.title {
+    text-align: center;
+    color: var(--main-orange-color);
+    font-size: 3rem;
+}
+
+/*############## MAIN ##############*/
+
+.main {
+    width: 100%;
+    margin-top: 1rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*############## FILTERS ##############*/
+
+.filtersContainer {
+    display: flex;
+    column-gap: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 18px;
+}
+
+.filter {
+    display: flex;
+    flex-direction: column;
+}
+
+.select {
+    border: 1px solid #D0D4D9;
+    border-radius: 10px;
+    width: 80px;
+    padding: 0 10px;
+    margin: 0 auto;
+    outline: none;
+    font-size: 15px;
+}
+
+/*############## ORDER BUTTONS ##############*/
+.orderContainer {
+    display: flex;
+    column-gap: 2rem;
+    margin-top: 1rem;
+}
+
+.orderBtn {
+    border: none;
+    background: none;
+    font-family: var(--main-font);
+    font-size: 18px;
+    cursor: pointer;
+    background:
+        linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
+        linear-gradient(to right, rgba(255, 0, 0, 1), rgb(255, 0, 0), rgb(255, 5, 0));
+    background-size: 100% 0.1em, 0 0.1em;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+}
+
+.orderBtn:hover {
+    color: var(--main-orange-color);
+
+    background-size: 0 0.1em, 100% 0.1em;
+
+}
+
+.orderBtn:disabled {
+    color: var(--main-orange-color);
+}
+
+/*############## SEARCHBAR ##############*/
+
+.searchContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchBar {
+    border: 1px solid #D0D4D9;
+    max-width: 300px;
+    max-height: 40px;
+    font-size: 18px;
+    border-radius: 10px;
+    outline: none;
+    padding: 1rem;
+    color: #808080;
+    display: flex;
+}
+
+/*############## HERO BUTTONS ##############*/
+.heroButtonsContainer {
+    display: flex;
+    column-gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.heroButtons {
+    background: none;
+    border: none;
+    font-family: var(--main-font);
+    font-size: 20px;
+    padding: .5rem 1rem;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.heroButtons:hover {
+    color: var(--main-orange-color);
+    border: 1px solid #D0D4D9;
+    border-radius: 15px;
+}
+
+
+/*############## COUNTRIES ##############*/
+
+.countriesContainer {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.countryCard {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.flagContainer {
+    width: 330px;
+    height: 170px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.flagContainer img {
+    object-fit: cover;
+    width: 270px;
+    height: 140px;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.244);
+    transition: all .5s;
+}
+
+.flagContainer img:hover {
+    width: 330px;
+    height: 170px;
+}
+
+
+
+
+
+/*############## MEDIA QUERYS ##############*/
+
+@media (max-width: 1400px) {
+    .countriesContainer {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (max-width: 1050px) {
+    .countriesContainer {
+        grid-template-columns: 1fr 1fr ;
+    }
+}
+@media (max-width: 768px) {
+    .countriesContainer {
+        grid-template-columns: 1fr ;
+    }
+}
+
+@media (max-width: 320px) {
+    .countriesContainer {
+        width: 100%;
+    }
+    .countriesContainer img {
+        width: 100%;
+    }
+    .orderContainer {
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+    #HeroButtonsNumber {
+        display: none;
+    }
+}
+
