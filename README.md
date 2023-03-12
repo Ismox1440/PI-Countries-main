@@ -47,7 +47,7 @@ __IMPORTANTE__: No se permitirá utilizar librerías externas para aplicar estil
 
 #### Tecnologías necesarias
 
-- [.] React
+- [o] React
 - [ ] Redux
 - [ ] Express
 - [ ] Sequelize - Postgres
